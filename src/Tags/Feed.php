@@ -10,7 +10,8 @@ class Feed extends Tags
 {
     public function index()
     {
-        $feed = collect(FeedsFacade::make('https://thedalzells.org')->get_items())->map(function ($item, $ignored) {
+        $url = $this->params->get('url');
+        $feed = collect(FeedsFacade::make($url)->get_items())->map(function ($item, $ignored) {
             return [
                 'title' => $item->get_title(),
                 'summary' => $item->get_description(),
