@@ -1,0 +1,23 @@
+{
+    "name": "edalzell/rss",
+    "type": "statamic-addon",
+    "require": {
+        "willvincent/feeds": "2.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Edalzell\\Rss\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Rss",
+            "description": "Rss addon"
+        },
+        "laravel": {
+            "providers": [
+                "Edalzell\\Rss\\ServiceProvider"
+            ]
+        }
+    }
+}
