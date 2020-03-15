@@ -2,8 +2,10 @@
     "name": "edalzell/rss",
     "type": "statamic-addon",
     "require": {
+        "statamic/cms": "3.0.*@beta",
         "willvincent/feeds": "2.1.*"
     },
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Edalzell\\Rss\\": "src"
