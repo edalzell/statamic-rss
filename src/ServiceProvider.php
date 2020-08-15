@@ -3,13 +3,15 @@
 namespace Edalzell\Rss;
 
 use Edalzell\Rss\Tags\Feed;
-use willvincent\Feeds\FeedsServiceProvider;
 use Statamic\Providers\AddonServiceProvider;
+use willvincent\Feeds\FeedsServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
 {
+    protected $publishAfterInstall = false;
+
     protected $tags = [
-       Feed::class
+       Feed::class,
     ];
 
     public function register()
