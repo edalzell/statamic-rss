@@ -1,8 +1,11 @@
 {
     "name": "edalzell/rss",
+    "description": "Pulls in RSS feed from external site",
     "type": "statamic-addon",
     "require": {
-        "statamic/cms": "3.0.*@beta",
+        "php": "^7.4 || ^8.0",
+        "laravel/framework": "^7.0 || ^8.0",
+        "statamic/cms": "^3.0",
         "willvincent/feeds": "2.1.*"
     },
     "license": "MIT",
